@@ -2,6 +2,7 @@ Mtl.js
 
 A simple js tool lib.
 
+![GitHub](https://img.shields.io/github/license/Srooter/Mtl-js)
 
 ## Features
 
