@@ -12,7 +12,7 @@
  *            //do something
  *         }else{
  *            //do something
- *         }
+ *            //location.replace("http://www.xxx.com")
  *     }else{
  *         // Pc
  *     }

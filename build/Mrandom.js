@@ -16,10 +16,10 @@ const Mrandom = {
    * @returns {String} 随机字符串。
    *
    * @example
-   *       let res = Mrandom.getRandom(['Uppercase','Number',"Lowercase","Symbol"],8);
+   *       let res = Mrandom.getRandomStr(['Uppercase','Number',"Lowercase","Symbol"],8);
    *       console.log(res)
    */
-  getRandom: function(typeArr, num) {
+  getRandomStr: function(typeArr, num) {
     let str = "";
     let charStr = "";
     num = num || 6;
@@ -46,7 +46,22 @@ const Mrandom = {
       str += charStr.substring(index, index + 1);
     }
     return str;
-  }
+  },
+  /**
+   * @description 随机数组排序
+   * @author Sroot
+   * @version 0.0.1
+   * @param {Array} arr 必传，生成字符串的类型。
+   *
+   * @returns {String} 随机排序后数组。
+   *
+   * @example
+   *       let res = Mrandom.getRandomArrySort([1,2,3,4]);
+   *       console.log(res)
+   */
+  getRandomArrySort(arr){
+    arr.sort(function() { return 0.5 - Math.random() })
+  },
 };
 
 export default Mrandom;
