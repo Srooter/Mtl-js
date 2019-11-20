@@ -6,6 +6,17 @@
  */
 const Murl = {
   /**
+   * @description url刷新。从服务器重新加载页面，而绕过浏览器HTTP缓存。
+   * @author Sroot
+   * @version 0.0.1
+   *
+   * @example
+   *     Murl.clearCache();
+   */
+  clearCache:function() {
+    window.location.reload(true)
+  },
+  /**
    * @description url跳转。
    * @author Sroot
    * @version 0.0.1
@@ -26,7 +37,7 @@ const Murl = {
    *     Murl.getCurrAllPath();
    */
   getCurrAllPath:function(){
-    return window.document.location.href
+    return window.location.href
   },
    /**
    * @description 获取当前主机地址。
@@ -37,7 +48,7 @@ const Murl = {
    *     Murl.getHostPath();
    */
   getHostPath:function(){
-    return `${document.location.protocol}//${document.location.host}`
+    return `${window.location.protocol}//${window.location.host}`
   },
   /**
    * @description 获取url上的参数。
@@ -71,7 +82,7 @@ const Murl = {
    *     console.log(res);
    */
   removeURLParam: function(paramName) {
-    let url = document.location.href;
+    let url = window.location.href;
     let urlparts = url.split("?");
     if (urlparts.length >= 2) {
       let prefix = encodeURIComponent(paramName) + "=";
