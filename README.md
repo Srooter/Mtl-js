@@ -1,12 +1,14 @@
 Mtl.js
 
+English|[中文](README-zh.md)
+
 A simple js tool lib.
 
 ![GitHub](https://img.shields.io/github/license/Srooter/Mtl-js)
 
 ## Features
 
-1.common function for business.
+1. common function for business.
 
 ## Environment Support
 
@@ -19,7 +21,6 @@ Reference in code.
 ## Reference
 
 - [lodash](https://github.com/lodash/lodash).
-- from my working other projects.
 
 ## License
 
