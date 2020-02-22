@@ -1,6 +1,6 @@
 Mtl.js
 
-English|[中文](README-zh.md)
+English | [中文](README-zh.md)
 
 A simple js tool lib.
 

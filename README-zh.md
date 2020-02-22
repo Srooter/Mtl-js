@@ -1,6 +1,6 @@
 Mtl.js
 
-中文|[English](README.md)
+中文 | [English](README.md)
 
 一个简单的JavaScript工具库.
 
