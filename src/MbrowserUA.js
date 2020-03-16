@@ -23,14 +23,17 @@ let ua = navigator.userAgent,
   isAndroid = !!ua.match(/Android/i),
   //ios终端
   isIOS = !!ua.match(/iPhone|iPad|iPod/i),
+  //支付宝
+  isAlipay = ua.match(/AlipayClient/i),
   //微信浏览器
   wechat = ua.includes("MicroMessenger"),
-  // QQ浏览器
+  //QQ浏览器
   qq = ua.includes("QQ");
 
 export default {
   isAndroid,
   isIOS,
+  isAlipay,
   wechat,
   qq
 };

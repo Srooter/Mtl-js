@@ -90,7 +90,7 @@ const Mdate = {
    * @returns {String} 时间。"xx前"
    *
    * @example
-   *     let res = Mdate.getDateFront(1567328150786);
+   *     let res = Mdate.getDateFront(1567326088);
    *     console.log(res);
    */
   getDateFront: function(createtime) {

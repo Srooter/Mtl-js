@@ -28,7 +28,7 @@ const Murl = {
   goRedirect: function(url) {
     window.location.href = url;
   },
-   /**
+  /**
    * @description 获取当前完整url地址。
    * @author Sroot
    * @version 0.0.1
@@ -39,7 +39,7 @@ const Murl = {
   getCurrAllPath:function(){
     return window.location.href
   },
-   /**
+  /**
    * @description 获取当前主机地址。
    * @author Sroot
    * @version 0.0.1
@@ -49,6 +49,18 @@ const Murl = {
    */
   getHostPath:function(){
     return `${window.location.protocol}//${window.location.host}`
+  },
+  /**
+   * @description 移除url的前缀。
+   * @author Sroot
+   * @version 0.0.1
+   * @param {String} url 必传，需要移除的url。
+   *
+   * @example
+   *     Murl.removeURLPrefix("https://www.xxx.com");
+   */
+  removeURLPrefix:function(url){
+    return url.replace(/(^\w+:|^)\/\//, '')
   },
   /**
    * @description 获取url上的参数。
