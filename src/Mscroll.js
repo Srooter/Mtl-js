@@ -30,6 +30,22 @@ const Mscroll = {
   scrollToEL: function(el) {
     let element = document.querySelector(el);
     element.scrollIntoView({ behavior: "smooth" });
+  },
+  /**
+   * @description 获取当前页面滚动位置
+   * @author Sroot
+   * @version 0.0.1
+   *
+   * @returns {Object} 坐标。{x: 0, y: 200}
+   *
+   * @example
+   *     Mscroll.getScrollPosition();
+   */
+  getScrollPosition:function(el) {
+    let element = el?el:window;  
+    let x = element.pageXOffset !== undefined ? element.pageXOffset : element.scrollLeft
+    let y = element.pageYOffset !== undefined ? element.pageYOffset : element.scrollTop
+    return {x, y}
   }
 };
 

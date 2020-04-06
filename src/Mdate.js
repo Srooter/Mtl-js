@@ -1,5 +1,5 @@
 /**
- * @description 时间操作
+ * @description 时间操作。
  * @author Sroot
  * @version 0.0.1
  *

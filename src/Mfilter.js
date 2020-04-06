@@ -1,12 +1,12 @@
 /**
- * @description 字符串操作
+ * @description 字符串操作。
  * @author Sroot
  * @version 0.0.1
  *
  */
 const Mfilter = {
   /**
-   * @description 过滤肮脏字符串
+   * @description 过滤肮脏字符串。
    * @author Sroot
    * @version 0.0.1
    * @param {String} str 必传，需要过滤的字符串。

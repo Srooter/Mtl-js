@@ -6,7 +6,7 @@
  */
 const Mstr = {
   /**
-   * @description 截取字符串
+   * @description 截取字符串。
    * @author Sroot
    * @version 0.0.1
    * @param {String} str 必传，需要截取的字符串。
@@ -36,7 +36,7 @@ const Mstr = {
     return str;
   },
   /**
-   * @description 清除字符串的空格
+   * @description 清除字符串的空格。
    * @author Sroot
    * @version 0.0.1
    * @param {String} str 必传，需要清除的字符串。

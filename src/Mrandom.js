@@ -1,5 +1,5 @@
 /**
- * @description 随机生成操作
+ * @description 随机生成操作。
  * @author Sroot
  * @version 0.0.1
  *
@@ -7,7 +7,7 @@
 
 const Mrandom = {
   /**
-   * @description 随机生成字符串
+   * @description 随机生成字符串。
    * @author Sroot
    * @version 0.0.1
    * @param {Array} typeArr 必传，生成字符串的类型。
@@ -48,7 +48,7 @@ const Mrandom = {
     return str;
   },
   /**
-   * @description 随机数组排序
+   * @description 随机数组排序。
    * @author Sroot
    * @version 0.0.1
    * @param {Array} arr 必传，生成字符串的类型。

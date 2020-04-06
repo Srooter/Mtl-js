@@ -1,12 +1,12 @@
 /**
- * @description 字节操作
+ * @description 字节操作。
  * @author Sroot
  * @version 0.0.1
  *
  */
 const Mbyte = {
   /**
-   * @description 获取字节大小
+   * @description 获取字节大小。
    * @author Sroot
    * @version 0.0.1
    * @param {String} str 必传，字符串。
