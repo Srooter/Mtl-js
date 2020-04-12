@@ -12,6 +12,20 @@ const SVN_DAY = 1000 * 60 * 60 * 24 * 7;
 
 const Mdate = {
   /**
+   * @description 获取天数前后的时间。
+   * @author Sroot
+   * @version 0.0.1
+   * @param {Number} [day="1"] 必传，天数（正数为几天后，负数为几天后）。
+   * @returns {Number} 时间戳。
+   *
+   * @example
+   *     let res = Mdate.setDate(1);
+   *     console.log(res);
+   */
+  setDate(day) {  
+    return Date.now() + day * ONE_DAY;
+  },
+  /**
    * @description 获取当前时间毫秒数。
    * @author Sroot
    * @version 0.0.1

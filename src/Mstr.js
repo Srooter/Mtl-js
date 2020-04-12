@@ -36,7 +36,7 @@ const Mstr = {
     return str;
   },
   /**
-   * @description 清除字符串的空格。
+   * @description 清除字符串的空格、回车、换行符。
    * @author Sroot
    * @version 0.0.1
    * @param {String} str 必传，需要清除的字符串。
@@ -47,7 +47,7 @@ const Mstr = {
    *     console.log(res)
    */
   cleanSpace: function(str) {
-    return str.replace(/\s/g, "");
+    return str.replace(/[\r\n]/g, "").replace(/\s/g, "");
   }
 };
 
