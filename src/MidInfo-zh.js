@@ -5,7 +5,7 @@
  *
  */
 const MIdInfo = {
-  isCardNo: function(idNo) {
+  isCardNo: function (idNo) {
     let pattern = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
     return pattern.test(idNo);
   },
@@ -21,7 +21,7 @@ const MIdInfo = {
    *     console.log(res);
    *
    */
-  getBirthday: function(idNo) {
+  getBirthday: function (idNo) {
     if (!this.isCardNo(idNo)) {
       return;
     }
@@ -30,11 +30,11 @@ const MIdInfo = {
       case 15:
         birthStr = idNo.substring(6, 12);
         birthStr = `19${birthStr}`;
-        birthStr =`${birthStr.substring(0, 4)}-${birthStr.substring(4,6)}-${birthStr.substring(6)}`;
+        birthStr = `${birthStr.substring(0, 4)}-${birthStr.substring(4, 6)}-${birthStr.substring(6)}`;
         break;
       case 18:
         birthStr = idNo.substring(6, 14);
-        birthStr = `${birthStr.substring(0, 4)}-${birthStr.substring(4,6)}-${birthStr.substring(6)}`;
+        birthStr = `${birthStr.substring(0, 4)}-${birthStr.substring(4, 6)}-${birthStr.substring(6)}`;
         break;
       default:
         break;
@@ -52,7 +52,7 @@ const MIdInfo = {
    *     console.log(res);
    *
    */
-  getSex: function(idNo) {
+  getSex: function (idNo) {
     if (!this.isCardNo(idNo)) {
       return;
     }
@@ -67,7 +67,7 @@ const MIdInfo = {
         break;
     }
     return sexStr;
-  }
+  },
 };
 
 export default MIdInfo;

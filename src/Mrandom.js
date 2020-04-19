@@ -19,11 +19,11 @@ const Mrandom = {
    *       let res = Mrandom.getRandomStr(['Uppercase','Number',"Lowercase","Symbol"],8);
    *       console.log(res)
    */
-  getRandomStr: function(typeArr, num) {
+  getRandomStr: function (typeArr, num) {
     let str = "";
     let charStr = "";
     num = num || 6;
-    typeArr.map(function(type) {
+    typeArr.map(function (type) {
       switch (type) {
         case "Uppercase":
           charStr += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -59,8 +59,10 @@ const Mrandom = {
    *       let res = Mrandom.getRandomArrySort([1,2,3,4]);
    *       console.log(res)
    */
-  getRandomArrySort(arr){
-    arr.sort(function() { return 0.5 - Math.random() })
+  getRandomArrySort(arr) {
+    arr.sort(function () {
+      return 0.5 - Math.random();
+    });
   },
 };
 

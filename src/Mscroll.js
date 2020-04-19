@@ -13,7 +13,7 @@ const Mscroll = {
    * @example
    *     Mscroll.scrollToTop();
    */
-  scrollToTop: function() {
+  scrollToTop: function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
   },
   /**
@@ -27,7 +27,7 @@ const Mscroll = {
    * @example
    *     Mscroll.scrollToEL('#sdiv');
    */
-  scrollToEL: function(el) {
+  scrollToEL: function (el) {
     let element = document.querySelector(el);
     element.scrollIntoView({ behavior: "smooth" });
   },
@@ -41,12 +41,12 @@ const Mscroll = {
    * @example
    *     Mscroll.getScrollPosition();
    */
-  getScrollPosition:function(el) {
-    let element = el?el:window;  
-    let x = element.pageXOffset !== undefined ? element.pageXOffset : element.scrollLeft
-    let y = element.pageYOffset !== undefined ? element.pageYOffset : element.scrollTop
-    return {x, y}
-  }
+  getScrollPosition: function (el) {
+    let element = el ? el : window;
+    let x = element.pageXOffset !== undefined ? element.pageXOffset : element.scrollLeft;
+    let y = element.pageYOffset !== undefined ? element.pageYOffset : element.scrollTop;
+    return { x, y };
+  },
 };
 
 export default Mscroll;

@@ -13,8 +13,8 @@ const Murl = {
    * @example
    *     Murl.clearCache();
    */
-  clearCache:function() {
-    window.location.reload(true)
+  clearCache: function () {
+    window.location.reload(true);
   },
   /**
    * @description url跳转。
@@ -25,7 +25,7 @@ const Murl = {
    * @example
    *     Murl.goRedirect("./text.html");
    */
-  goRedirect: function(url) {
+  goRedirect: function (url) {
     window.location.href = url;
   },
   /**
@@ -36,8 +36,8 @@ const Murl = {
    * @example
    *     Murl.getCurrAllPath();
    */
-  getCurrAllPath:function(){
-    return window.location.href
+  getCurrAllPath: function () {
+    return window.location.href;
   },
   /**
    * @description 获取当前主机地址。
@@ -47,8 +47,8 @@ const Murl = {
    * @example
    *     Murl.getHostPath();
    */
-  getHostPath:function(){
-    return `${window.location.protocol}//${window.location.host}`
+  getHostPath: function () {
+    return `${window.location.protocol}//${window.location.host}`;
   },
   /**
    * @description 移除url的前缀。
@@ -59,8 +59,8 @@ const Murl = {
    * @example
    *     Murl.removeURLPrefix("https://www.xxx.com");
    */
-  removeURLPrefix:function(url){
-    return url.replace(/(^\w+:|^)\/\//, '')
+  removeURLPrefix: function (url) {
+    return url.replace(/(^\w+:|^)\/\//, "");
   },
   /**
    * @description 获取url上的参数。
@@ -73,14 +73,8 @@ const Murl = {
    *     let res = Murl.getUrlParam("name");
    *     console.log(res);
    */
-  getUrlKey: function(paramName) {
-    return (
-      decodeURIComponent(
-        (new RegExp("[?|&]" + paramName + "=" + "([^&;]+?)(&|#|;|$)").exec(
-          location.href
-        ) || [, ""])[1].replace(/\+/g, "%20")
-      ) || null
-    );
+  getUrlKey: function (paramName) {
+    return decodeURIComponent((new RegExp("[?|&]" + paramName + "=" + "([^&;]+?)(&|#|;|$)").exec(location.href) || [, ""])[1].replace(/\+/g, "%20")) || null;
   },
   /**
    * @description 移除url上的参数。
@@ -93,7 +87,7 @@ const Murl = {
    *     let res = Murl.removeURLParam("name");
    *     console.log(res);
    */
-  removeURLParam: function(paramName) {
+  removeURLParam: function (paramName) {
     let url = window.location.href;
     let urlparts = url.split("?");
     if (urlparts.length >= 2) {
@@ -109,7 +103,7 @@ const Murl = {
     } else {
       window.history.pushState("", document.title, url);
     }
-  }
+  },
 };
 
-export default Murl
+export default Murl;

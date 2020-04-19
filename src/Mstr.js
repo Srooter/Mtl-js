@@ -21,7 +21,7 @@ const Mstr = {
    *     let res = Mstr.getInterceptstr("aaaaa|dasdsdasda","|","front");
    *     console.log(res)
    */
-  getInterceptstr: function(str, interceptstr, interceptType) {
+  getInterceptstr: function (str, interceptstr, interceptType) {
     let index = str.lastIndexOf(interceptstr);
     switch (interceptType) {
       case "front":
@@ -46,9 +46,9 @@ const Mstr = {
    *     let res = Mstr.cleanSpace("aaa  aa   ");
    *     console.log(res)
    */
-  cleanSpace: function(str) {
+  cleanSpace: function (str) {
     return str.replace(/[\r\n]/g, "").replace(/\s/g, "");
-  }
+  },
 };
 
 export default Mstr;

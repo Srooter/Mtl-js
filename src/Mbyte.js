@@ -10,14 +10,14 @@ const Mbyte = {
    * @author Sroot
    * @version 0.0.1
    * @param {String} str 必传，字符串。
-   * 
+   *
    * @returns {Number} 字节大小。
    *
    * @example
    *     let res = Mbyte.getBtyeSize("abc");
    *     console.log(res)
    */
-  getBtyeSize: function(str) {
+  getBtyeSize: function (str) {
     return new Blob([str]).size;
   },
 };

@@ -15,7 +15,7 @@ const Mxss = {
    *     let res= Mxss.htmlencode("<script>alert(1)</script>")
    *     console.log(res)
    */
-  htmlencode: function(s) {
+  htmlencode: function (s) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(s));
     return div.innerHTML;
@@ -30,11 +30,11 @@ const Mxss = {
    *     let res= Mxss.htmldecode("&lt;script&gt;alert(1)&lt;/script&gt;")
    *     console.log(res)
    */
-  htmldecode: function(s) {
+  htmldecode: function (s) {
     let div = document.createElement("div");
     div.innerHTML = s;
     return div.innerText || div.textContent;
-  }
+  },
 };
 
-export default Mxss
+export default Mxss;

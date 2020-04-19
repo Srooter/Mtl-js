@@ -22,7 +22,7 @@ const Mdate = {
    *     let res = Mdate.setDate(1);
    *     console.log(res);
    */
-  setDate(day) {  
+  setDate(day) {
     return Date.now() + day * ONE_DAY;
   },
   /**
@@ -35,7 +35,7 @@ const Mdate = {
    *     let res = Mdate.getCurTime();
    *     console.log(res);
    */
-  getCurTime: function() {
+  getCurTime: function () {
     return new Date().getTime();
   },
   /**
@@ -49,7 +49,7 @@ const Mdate = {
    *     let res = Mdate.getMilliseconds(1567326088);
    *     console.log(res);
    */
-  getMilliseconds: function(time) {
+  getMilliseconds: function (time) {
     return parseInt(time) * ONE_SEC;
   },
   /**
@@ -63,7 +63,7 @@ const Mdate = {
    *     let res = Mdate.getTimestamp("2019/01/01 20:30:00");
    *     console.log(res);
    */
-  getTimestamp: function(time) {
+  getTimestamp: function (time) {
     return new Date(time).getTime() / ONE_SEC;
   },
   /**
@@ -77,7 +77,7 @@ const Mdate = {
    *     let res = Mdate.getYMD(1567326088);
    *     console.log(res);
    */
-  getYMD: function(time) {
+  getYMD: function (time) {
     var defaultTime = new Date(this.getMilliseconds(time));
     return `${defaultTime.getFullYear()}-${defaultTime.getMonth() + 1}-${defaultTime.getDate()}`;
   },
@@ -92,7 +92,7 @@ const Mdate = {
    *     let res = Mdate.getYMDHM(1567326088);
    *     console.log(res);
    */
-  getYMDHM: function(time) {
+  getYMDHM: function (time) {
     var defaultTime = new Date(this.getMilliseconds(time));
     return `${defaultTime.getFullYear()}-${defaultTime.getMonth() + 1}-${defaultTime.getDate()} ${defaultTime.getHours()}:${defaultTime.getMinutes()}:${defaultTime.getSeconds()}`;
   },
@@ -107,7 +107,7 @@ const Mdate = {
    *     let res = Mdate.getDateFront(1567326088);
    *     console.log(res);
    */
-  getDateFront: function(createtime) {
+  getDateFront: function (createtime) {
     const nowtime = this.getCurTime();
     const distance = nowtime - createtime;
     if (distance < ONE_SEC * 2) {
@@ -123,7 +123,7 @@ const Mdate = {
     } else {
       return this.getYMDHM(createtime);
     }
-  }
+  },
 };
 
 export default Mdate;

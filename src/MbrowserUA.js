@@ -35,5 +35,5 @@ export default {
   isIOS,
   isAlipay,
   wechat,
-  qq
+  qq,
 };
