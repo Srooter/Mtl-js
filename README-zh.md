@@ -4,7 +4,7 @@ Mtl.js
 
 一个简单的JavaScript工具库.
 
-![GitHub](https://img.shields.io/github/license/Srooter/Mtl-js)
+![GitHub](https://img.shields.io/github/license/Yu-Rooter/Mtl-js)
 
 ## 特征
 

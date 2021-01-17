@@ -1,13 +1,13 @@
 /**
  * @description xss注入，基本的xss防御，
- * @author Sroot
+ * @author Yu-Root
  * @version 0.0.1
  *
  */
 const Mxss = {
   /**
    * @description html编码。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {String} html 必传，需要编码的html。
    *
@@ -22,7 +22,7 @@ const Mxss = {
   },
   /**
    * @description html转码。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {String} url 必传，需要解码的html。
    *

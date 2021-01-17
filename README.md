@@ -4,7 +4,7 @@ English | [中文](README-zh.md)
 
 A simple js tool lib.
 
-![GitHub](https://img.shields.io/github/license/Srooter/Mtl-js)
+![GitHub](https://img.shields.io/github/license/Yu-Rooter/Mtl-js)
 
 ## Features
 

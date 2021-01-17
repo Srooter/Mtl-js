@@ -1,6 +1,6 @@
 /**
  * @description 身份证获取信息。
- * @author Sroot
+ * @author Yu-Root
  * @version 0.0.1
  *
  */
@@ -11,7 +11,7 @@ const MIdInfo = {
   },
   /**
    * @description 根据身份证获取出生日期。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {Number} idNo 必传，身份证号码。
    * @returns {String} 出生日期。 "yyyy-mm-dd"
@@ -43,7 +43,7 @@ const MIdInfo = {
   },
   /**
    * @description 根据身份证获取性别。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {Number} idNo 必传，身份证号码。
    * @returns {String} 性别。 "男"/"女"

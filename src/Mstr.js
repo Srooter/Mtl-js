@@ -1,13 +1,13 @@
 /**
  * @description 字符串操作
- * @author Sroot
+ * @author Yu-Root
  * @version 0.0.1
  *
  */
 const Mstr = {
   /**
    * @description 截取字符串。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {String} str 必传，需要截取的字符串。
    * @param {String} interceptstr 必传，截取某字符。
@@ -37,7 +37,7 @@ const Mstr = {
   },
   /**
    * @description 清除字符串的空格、回车、换行符。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {String} str 必传，需要清除的字符串。
    * @returns {String} 清除后的字符串。

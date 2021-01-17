@@ -1,13 +1,13 @@
 /**
  * @description url操作。
- * @author Sroot
+ * @author Yu-Root
  * @version 0.0.1
  *
  */
 const Murl = {
   /**
    * @description url刷新。从服务器重新加载页面，而绕过浏览器HTTP缓存。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    *
    * @example
@@ -18,7 +18,7 @@ const Murl = {
   },
   /**
    * @description url跳转。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {String} url 必传，需要跳转的路径。
    *
@@ -30,7 +30,7 @@ const Murl = {
   },
   /**
    * @description 获取当前完整url地址。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    *
    * @example
@@ -41,7 +41,7 @@ const Murl = {
   },
   /**
    * @description 获取当前主机地址。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    *
    * @example
@@ -52,7 +52,7 @@ const Murl = {
   },
   /**
    * @description 移除url的前缀。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {String} url 必传，需要移除的url。
    *
@@ -64,7 +64,7 @@ const Murl = {
   },
   /**
    * @description 获取url上的参数。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {String} paramName 必传，参数名。
    * @returns {String} 参数值。
@@ -78,7 +78,7 @@ const Murl = {
   },
   /**
    * @description 移除url上的参数。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {String} paramName 必传，参数名。
    * @returns {String} 参数值。

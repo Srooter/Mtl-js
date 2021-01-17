@@ -1,6 +1,6 @@
 /**
  * @description 随机生成操作。
- * @author Sroot
+ * @author Yu-Root
  * @version 0.0.1
  *
  */
@@ -8,7 +8,7 @@
 const Mrandom = {
   /**
    * @description 随机生成字符串。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {Array} typeArr 必传，生成字符串的类型。
    * @param {Number} num 选传，生成字符的长度。
@@ -49,7 +49,7 @@ const Mrandom = {
   },
   /**
    * @description 随机数组排序。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {Array} arr 必传，生成字符串的类型。
    *
@@ -64,6 +64,8 @@ const Mrandom = {
       return 0.5 - Math.random();
     });
   },
+  if(!window.Float32Array) window.Float32Array = window.Array;
+if(!window.Uint16Array) window.Uint16Array = window.Array;
 };
 
 export default Mrandom;

@@ -1,13 +1,13 @@
 /**
  * @description 过滤操作。
- * @author Sroot
+ * @author Yu-Root
  * @version 0.0.1
  *
  */
 const Mfilter = {
   /**
    * @description 过滤肮脏字符串。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {String} str 必传，需要过滤的字符串。
    * @param {String} [type=""]  选传，截取类型。
@@ -37,12 +37,12 @@ const Mfilter = {
   },
   /**
    * @description 脱敏字符串。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {String} str 必传，需要过滤的字符串。
    * @param {NUmber} start  必传，开始脱敏字符串的下标。
    * @param {NUmber} end  必传，结束脱敏字符串的下标。
-   * @param {String} maskChar  必传，脱敏符号。                          
+   * @param {String} maskChar  必传，脱敏符号。
    *
    * @example
    *     let res = Mfilter.filterMaskString("19910088273", 2, 9, "*");
@@ -70,7 +70,7 @@ const Mfilter = {
   },
   /**
    * @description 数组去重。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {Array} str 必传，需要去重数组。
    *

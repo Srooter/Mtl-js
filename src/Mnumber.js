@@ -1,13 +1,13 @@
 /**
  * @description 数值操作。
- * @author Sroot
+ * @author Yu-Root
  * @version 0.0.1
  *
  */
 const Mnumber = {
   /**
    * @description 补零。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {Number} number 必传，数字。
    * @returns {String} 数值字符串。
@@ -21,7 +21,7 @@ const Mnumber = {
   },
   /**
    * @description 保留两位小数。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {Number} number 必传，数字。
    * @param {Boolean} number true/false。
@@ -39,7 +39,7 @@ const Mnumber = {
   },
   /**
    * @description 数值分割（10000 => 10,000）。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {Number} number 必传，数字。
    * @param {Number} digits 必传，位数。
@@ -57,7 +57,7 @@ const Mnumber = {
   },
   /**
    * @description 数值转换（10000 => 1W）。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {Number} number 必传，数字。
    * @returns {String} 数值字符串。

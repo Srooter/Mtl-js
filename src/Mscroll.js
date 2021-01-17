@@ -1,13 +1,13 @@
 /**
  * @description 滚动操作
- * @author Sroot
+ * @author Yu-Root
  * @version 0.0.1
  *
  */
 const Mscroll = {
   /**
    * @description 滚动到顶部
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    *
    * @example
@@ -18,7 +18,7 @@ const Mscroll = {
   },
   /**
    * @description 滚动到某元素
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {String} str 必传，字符串。
    *
@@ -33,7 +33,7 @@ const Mscroll = {
   },
   /**
    * @description 获取当前页面滚动位置
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    *
    * @returns {Object} 坐标。{x: 0, y: 200}

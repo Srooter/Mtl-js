@@ -1,6 +1,6 @@
 /**
  * @description 判断用户浏览器类型
- * @author Sroot
+ * @author Yu-Root
  * @version 0.0.1
  * @returns {Boolean} true/false。
  *

@@ -1,6 +1,6 @@
 /**
  * @description 时间操作。
- * @author Sroot
+ * @author Yu-Root
  * @version 0.0.1
  *
  */
@@ -13,7 +13,7 @@ const SVN_DAY = 1000 * 60 * 60 * 24 * 7;
 const Mdate = {
   /**
    * @description 获取天数前后的时间。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {Number} [day="1"] 必传，天数（正数为几天后，负数为几天后）。
    * @returns {Number} 时间戳。
@@ -27,7 +27,7 @@ const Mdate = {
   },
   /**
    * @description 获取当前时间毫秒数。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @returns {Number} 毫秒数。
    *
@@ -40,7 +40,7 @@ const Mdate = {
   },
   /**
    * @description 秒数转化毫秒数。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {Number} [time="1567326088"] 选传，时间戳。
    * @returns {Number} 时间戳。
@@ -54,7 +54,7 @@ const Mdate = {
   },
   /**
    * @description 时间转化时间戳。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {String} [time="2019/01/01 20:30:00"] 选传，标准时间。
    * @returns {Number} 时间戳。
@@ -68,7 +68,7 @@ const Mdate = {
   },
   /**
    * @description 时间格式化为yyyy-mm-dd。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {Number} [time="1567326088"] 必传，时间戳。
    * @returns {String} 标准时间。"yyyy-mm-dd"
@@ -83,7 +83,7 @@ const Mdate = {
   },
   /**
    * @description 时间格式化为yyyy-mm-dd hh:mm。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {Number} [time="1567326088"] 必传，时间戳。
    * @returns {String} 标准时间。"yyyy-mm-dd hh:mm"
@@ -98,7 +98,7 @@ const Mdate = {
   },
   /**
    * @description 时间格式化为XX前。
-   * @author Sroot
+   * @author Yu-Root
    * @version 0.0.1
    * @param {Number} [time="1567326088"] 必传，毫秒数。
    * @returns {String} 时间。"xx前"
