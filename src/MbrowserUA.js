@@ -19,6 +19,12 @@
  *
  */
 let ua = navigator.userAgent,
+  //IE浏览器（IE10与IE10以下版本）
+  isOldIE = !!ua.match(/MSIE/i),
+  //IE浏览器（IE11以上版本）
+  isNewIE = !!ua.match(/Trident/i),
+  //Edge 浏览器
+  isEdge = !!ua.match(/Edge/i),
   //android终端
   isAndroid = !!ua.match(/Android/i),
   //ios终端
@@ -31,6 +37,9 @@ let ua = navigator.userAgent,
   qq = ua.includes("QQ");
 
 export default {
+  isOldIE,
+  isNewIE,
+  isEdge,
   isAndroid,
   isIOS,
   isAlipay,

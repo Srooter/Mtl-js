@@ -14,7 +14,18 @@ const Murl = {
    *     Murl.clearCache();
    */
   clearCache: function () {
-    window.location.reload(true);
+    window.location.reload();
+  },
+  /**
+   * @description 返回url刷新。从服务器重新加载页面，而绕过浏览器HTTP缓存。
+   * @author Yu-Root
+   * @version 0.0.1
+   *
+   * @example
+   *     Murl.clearCache();
+   */
+  goBackClearCache: function () {
+    window.addEventListener("pageshow", (e) => e.persisted && location.reload());
   },
   /**
    * @description url跳转。
