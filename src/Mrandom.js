@@ -64,8 +64,6 @@ const Mrandom = {
       return 0.5 - Math.random();
     });
   },
-  if(!window.Float32Array) window.Float32Array = window.Array;
-if(!window.Uint16Array) window.Uint16Array = window.Array;
 };
 
 export default Mrandom;
