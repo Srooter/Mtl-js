@@ -62,7 +62,7 @@ const Mfilter = {
     if (maskLength == 0) {
       return str;
     }
-    let maskText = ''
+    let maskText = "";
     for (var i = 0; i < maskLength; i++) {
       maskText += maskChar;
     }
@@ -72,16 +72,32 @@ const Mfilter = {
    * @description 数组去重。
    * @author Yu-Root
    * @version 0.0.1
-   * @param {Array} str 必传，需要去重数组。
+   * @param {Array} array 必传，需要去重数组。
    *
    * @returns {Array} 去重后数组。
    *
    * @example
-   *     let res = Mfilter.filterArrayDuplicate([1,2,2,3]);
+   *     let res = Mfilter.filterArrayUnique([1,2,2,3]);
    *     console.log(res)
    */
-  filterArrayDuplicate: function (array) {
+  filterArrayUnique: function (array) {
     return [...new Set(array)];
+  },
+  /**
+   * @description 数组对象去重。
+   * @author Yu-Root
+   * @version 0.0.1
+   * @param {Array} array 必传，需要去重数组对象。
+   * @param {String} propertyName 必传，需要去重对象的属性名。
+   *
+   * @returns {Array} 去重后对象数组。
+   *
+   * @example
+   *     let res = Mfilter.filterArrayObjectUnique([{id: 1, name: "Yu-Root"},{id: 2, name: "Yu-Root"},{id: 3, name: "Sam"}],"name");
+   *     console.log(res)
+   */
+  filterArrayObjectUnique: function (array, propertyName) {
+    return array.filter((el, i) => array.findIndex((a) => a[propertyName] === el[propertyName]) === i);
   },
 };
 
